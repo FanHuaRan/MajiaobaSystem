@@ -1,5 +1,8 @@
 ﻿using System.Windows;
 using GalaSoft.MvvmLight.Threading;
+using MajiaobaGeoSystem.Util;
+using MajiaobaGeoSystem.DomainModel;
+using System;
 
 namespace MajiaobaGeoSystem
 {
@@ -11,6 +14,10 @@ namespace MajiaobaGeoSystem
             static App()
             {
                   DispatcherHelper.Initialize();
+            }
+            protected override void OnStartup(StartupEventArgs e)
+            {
+                
             }
       }
 }

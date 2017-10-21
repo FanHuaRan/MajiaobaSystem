@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MajiaobaGeoSystem.Pages
 {
     /// <summary>
-    /// Settings.xaml 的交互逻辑
+    /// DisasterManage.xaml 的交互逻辑
     /// </summary>
-    public partial class Settings : UserControl
+    public partial class DisasterManage : UserControl
     {
-        public Settings()
+        public DisasterManage()
         {
             InitializeComponent();
         }

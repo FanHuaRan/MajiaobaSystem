@@ -1,4 +1,4 @@
-﻿namespace MajiaobaGeoSystem.Model
+﻿namespace MajiaobaGeoSystem.DataModel
 {
       public class DataItem
       {

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MajiaobaGeoSystem.Pages
+namespace MajiaobaGeoSystem.Content.DisasterManage
 {
     /// <summary>
-    /// Settings.xaml 的交互逻辑
+    /// DisasterDeleteConfirm.xaml 的交互逻辑
     /// </summary>
-    public partial class Settings : UserControl
+    public partial class DisasterDeleteConfirm : UserControl
     {
-        public Settings()
+        public DisasterDeleteConfirm()
         {
             InitializeComponent();
         }

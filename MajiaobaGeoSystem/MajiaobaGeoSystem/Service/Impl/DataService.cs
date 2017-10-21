@@ -1,6 +1,7 @@
 ﻿using System;
+using MajiaobaGeoSystem.DataModel;
 
-namespace MajiaobaGeoSystem.Model
+namespace MajiaobaGeoSystem.Service
 {
       public class DataService : IDataService
       {
@@ -11,5 +12,6 @@ namespace MajiaobaGeoSystem.Model
                   var item = new DataItem("Welcome to MVVM Light");
                   callback(item, null);
             }
+
       }
 }

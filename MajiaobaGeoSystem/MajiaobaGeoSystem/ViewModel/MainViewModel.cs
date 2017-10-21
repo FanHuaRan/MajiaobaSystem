@@ -1,5 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
-using MajiaobaGeoSystem.Model;
+using MajiaobaGeoSystem.Service;
 
 namespace MajiaobaGeoSystem.ViewModel
 {
@@ -11,7 +11,8 @@ namespace MajiaobaGeoSystem.ViewModel
       /// </summary>
       public class MainViewModel : ViewModelBase
       {
-            private readonly IDataService _dataService;
+            private readonly IDataService dataService;
+            private readonly IDisasterPointService disasterPointServce;
 
             /// <summary>
             /// The <see cref="WelcomeTitle" /> property's name.
@@ -39,20 +40,21 @@ namespace MajiaobaGeoSystem.ViewModel
             /// <summary>
             /// Initializes a new instance of the MainViewModel class.
             /// </summary>
-            public MainViewModel(IDataService dataService)
+            public MainViewModel(IDataService dataService, IDisasterPointService disasterPointServce)
             {
-                  _dataService = dataService;
-                  _dataService.GetData(
-                      (item, error) =>
-                      {
-                            if (error != null)
-                            {
-                            // Report error here
-                            return;
-                            }
+                this.dataService = dataService;
+                this.disasterPointServce = disasterPointServce;
+                this.dataService.GetData(
+                     (item, error) =>
+                     {
+                         if (error != null)
+                         {
+                             // Report error here
+                             return;
+                         }
 
-                            WelcomeTitle = item.Title;
-                      });
+                         WelcomeTitle = item.Title;
+                     });
             }
 
             ////public override void Cleanup()

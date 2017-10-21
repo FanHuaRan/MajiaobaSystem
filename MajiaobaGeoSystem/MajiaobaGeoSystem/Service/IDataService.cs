@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MajiaobaGeoSystem.DataModel;
 
-namespace MajiaobaGeoSystem.Model
+namespace MajiaobaGeoSystem.Service
 {
       public interface IDataService
       {
